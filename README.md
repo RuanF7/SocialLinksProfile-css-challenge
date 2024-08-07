@@ -1,6 +1,6 @@
 ## Table of contents
 
-- [Overview](#SocialLinksProfile)
+- [Social Links Profile](#Social-Links-Profile)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -12,9 +12,8 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Overview
+## Social Links Profile
 
 ### The challenge
 
@@ -28,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/RuanF7/SocialLinksProfile-css-challenge
+- Live Site URL: https://ruanf7.github.io/SocialLinksProfile-css-challenge/
 
 ## My process
 
@@ -38,63 +37,144 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Centrilize containers(divs), align everything with mobile firts in mind, and also how to reproduce a layout design.
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<body>
+    <main>
+      <div class="main-div">
+        <div class="user-div">
+          <img src="./assets/images/avatar-jessica.jpeg" />
+          <h2>Jessica Randall</h2>
+          <h3>London, United Kingdom"</h3>
+        </div>
+        <div class="description-div">
+          <h3>"Front-end developer and avid reader"</h3>
+        </div>
+      </div>
+      <div class="buttons-div">
+        <span>Github</span>
+        <span>Frontend Mentor</span>
+        <span>Linkedin</span>
+        <span>Twitter</span>
+        <span>Instagram</span>
+      </div>
+    </main>
+  </body>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+html {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 10px;
+  width: 400px;
+  min-width: 200px;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 3rem 0 3rem;
+}
+
+.user-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.user-div h2 {
+  margin-bottom: 0.5rem;
+}
+
+.user-div h3 {
+  font-size: 14px;
+  margin-top: 0;
+  color: hsl(75, 94%, 57%);
+}
+
+.description-div h3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttons-div span {
+  padding: 1rem;
+  background-color: hsl(0, 0%, 20%);
+  width: 70%;
+  margin: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.buttons-div :last-child {
+  margin-bottom: 2rem;
+}
+
+.buttons-div span:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+  cursor: url("./assets/images/cursor.png"), auto;
+}
+
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+I want to continue developing my front-end skills, speccialy css
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - https://github.com/RuanF7
+- Frontend Mentor - https://www.frontendmentor.io/profile/RuanF7
+- Linkedin - https://www.linkedin.com/in/ruan-finamor-09853397
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
